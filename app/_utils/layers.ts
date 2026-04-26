@@ -48,6 +48,7 @@ const PROP_OPTIONS = [
   { id: 'none', label: 'None', src: null },
   { id: 'scientist', label: 'Scientist', src: '/prop/prop1.png' },
   { id: 'mechanic', label: 'Mechanic', src: '/prop/prop2.png' },
+  { id: 'lawyer', label: 'Lawyer', src: '/prop/prop3.png' },
 ];
 
 export const CATEGORIES: Category[] = [
