@@ -11,14 +11,14 @@ interface CategoryButtonsProps {
 export default function CategoryButtons({ active, onSelect }: Readonly<CategoryButtonsProps>) {
   return (
     <div
-      className="flex flex-col gap-1 py-3 px-2 overflow-y-auto"
+      className="flex flex-row md:flex-col gap-2 md:gap-1 py-2 md:py-3 px-2 overflow-x-auto md:overflow-x-hidden md:overflow-y-auto scrollbar-hide"
       style={{ maxHeight: 480 }}
     >
       {CATEGORIES.map((cat) => (
         <button
           key={cat.id}
           onClick={() => onSelect(cat.id)}
-          className="w-full text-sm font-semibold py-2 px-3 rounded-lg cursor-pointer transition-all text-left"
+          className="whitespace-nowrap md:whitespace-normal shrink-0 md:shrink md:w-full text-sm font-semibold py-2 px-3 rounded-lg cursor-pointer transition-all md:text-left text-center"
           style={{
             background: active === cat.id ? '#5a6080' : 'transparent',
             color: active === cat.id ? '#e0e4ff' : '#8890b8',

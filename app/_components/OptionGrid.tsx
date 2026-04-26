@@ -15,7 +15,7 @@ export default function OptionGrid({
   onSelect,
 }: Readonly<OptionGridProps>) {
   return (
-    <div className="grid grid-cols-3 gap-2 p-3 overflow-y-auto" style={{ maxHeight: 460 }}>
+    <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-3 gap-2 p-3 overflow-y-auto" style={{ maxHeight: 460, minHeight: 200 }}>
       {options.map((opt) => (
         <button
           key={opt.id}

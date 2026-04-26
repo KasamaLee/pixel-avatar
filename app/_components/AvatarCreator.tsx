@@ -60,18 +60,17 @@ export default function AvatarCreator() {
 
   return (
     <div
-      className="flex flex-col rounded-xl overflow-hidden shadow-2xl"
-      style={{ background: "#4a5065", width: "fit-content", maxWidth: "100%" }}
+      className="flex flex-col rounded-xl overflow-hidden shadow-2xl w-full max-w-4xl"
+      style={{ background: "#4a5065" }}
     >
       {/* Top section: option grid | category buttons | preview */}
-      <div className="flex">
+      <div className="flex flex-col-reverse md:flex-row w-full">
         {/* Left: option grid */}
         <div
-          className="flex flex-col"
+          className="flex flex-col w-full md:w-[240px] md:flex-shrink-0 border-t-2 md:border-t-0 md:border-r-2"
           style={{
-            width: 240,
             background: "#3d4260",
-            borderRight: "2px solid #2e3245",
+            borderColor: "#2e3245",
           }}
         >
           <div
@@ -89,11 +88,10 @@ export default function AvatarCreator() {
 
         {/* Middle: category buttons */}
         <div
-          className="flex flex-col"
+          className="flex flex-col w-full md:w-[100px] md:flex-shrink-0 border-t-2 md:border-t-0 md:border-r-2"
           style={{
-            width: 100,
             background: "#363952",
-            borderRight: "2px solid #2e3245",
+            borderColor: "#2e3245",
           }}
         >
           <CategoryButtons
@@ -104,7 +102,7 @@ export default function AvatarCreator() {
 
         {/* Right: preview + actions */}
         <div
-          className="flex flex-col items-center gap-3 p-4"
+          className="flex flex-col items-center gap-3 p-4 flex-1 w-full md:w-auto"
           style={{ background: "#4a5065", minWidth: 220 }}
         >
           {/* Canvas preview */}

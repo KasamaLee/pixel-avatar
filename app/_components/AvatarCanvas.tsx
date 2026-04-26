@@ -30,7 +30,7 @@ export default function AvatarCanvas({ state, canvasRef }: Readonly<AvatarCanvas
       ref={canvasRef}
       width={CANVAS_W}
       height={CANVAS_H}
-      style={{ display: 'block', width: 280, height: 'auto' }}
+      style={{ display: 'block', width: '100%', maxWidth: 280, height: 'auto' }}
     />
   );
 }
